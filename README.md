@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+🎓 Namma Mitra
+Namma Mitra is an AI-integrated campus platform designed to enhance student life and streamline operations at the Bangalore Institute of Technology. Built by and for students, it centralizes campus needs into a single, highly scalable ecosystem.
 
-## Getting Started
+✨ Features
+🤖 AI Campus Assistant: An intelligent chatbot powered by the Google Gemini API to answer campus-related queries, guide students, and provide instant support.
 
-First, run the development server:
+🛍️ Peer-to-Peer Marketplace: A dedicated platform for students to buy, sell, or trade textbooks, electronics, and other essentials within the trusted campus network.
 
-```bash
+📅 Smart Attendance System: A streamlined, efficient way to log and track attendance, making life easier for both students and faculty.
+
+📊 Comprehensive Admin Portal: A secure dashboard to manage marketplace orders, track platform revenue, and monitor overall system health.
+
+🛠️ Tech Stack
+Namma Mitra is built using a modern JavaScript stack to ensure performance, scalability, and an excellent developer experience.
+
+Frontend: Next.js, React
+
+Backend: Node.js, Express.js
+
+Database: MongoDB
+
+AI Integration: Google Gemini API
+
+🚀 Getting Started
+Follow these instructions to set up the project locally on your machine for development and testing.
+
+Prerequisites
+Node.js (v16.x or later)
+
+MongoDB (Local instance or MongoDB Atlas)
+
+A Google Gemini API Key
+
+Installation
+Clone the repository:
+
+Bash
+git clone https://github.com/your-username/namma-mitra.git
+cd namma-mitra
+Install dependencies:
+
+Bash
+# Install backend dependencies
+cd backend
+npm install
+
+# Install frontend dependencies
+cd ../frontend
+npm install
+Set up Environment Variables:
+Create a .env file in both the frontend and backend directories and add your keys:
+
+Backend .env:
+
+Code snippet
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+GEMINI_API_KEY=your_gemini_api_key
+JWT_SECRET=your_jwt_secret
+Frontend .env.local:
+
+Code snippet
+NEXT_PUBLIC_API_URL=http://localhost:5000/api
+Run the Development Servers:
+Open two terminal windows to run both the frontend and backend simultaneously.
+
+Backend:
+
+Bash
+cd backend
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Frontend:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Bash
+cd frontend
+npm run dev
+Open the App:
+Visit http://localhost:3000 in your browser to see Namma Mitra in action.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+🤝 Contributing
+Contributions are welcome! If you are a student at BIT and want to help improve Namma Mitra, please feel free to fork the repository, create a feature branch, and submit a Pull Request.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+👨‍💻 Author
+Judah - Full Stack Developer
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Building a better campus experience, one line of code at a time.
